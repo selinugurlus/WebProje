@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MFmrDF2Gz4TjAD9DDXhjxzzZOuFclQffarLfHNBEagAgSCVeqaFBF3GYwOwgXCAJADHLALBwvm/j/X9WKZvYzg==",
+  "dgSpecHash": "xInH3cbQnSRZXvHZp9wAxf85bMwcJY/toqy43/S/o53rV9NWIceni09gMM6y3GIGqRSP61NrHTzTd/ZP7168Cg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\selin\\source\\repos\\Web\\EntityLayer\\EntityLayer.csproj",
+  "projectFilePath": "C:\\Users\\selin\\Source\\Repos\\WebProje\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\selin\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

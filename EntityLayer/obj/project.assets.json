@@ -1031,11 +1031,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\selin\\source\\repos\\Web\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\selin\\Source\\Repos\\WebProje\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "C:\\Users\\selin\\source\\repos\\Web\\EntityLayer\\EntityLayer.csproj",
+      "projectPath": "C:\\Users\\selin\\Source\\Repos\\WebProje\\EntityLayer\\EntityLayer.csproj",
       "packagesPath": "C:\\Users\\selin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\selin\\source\\repos\\Web\\EntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\selin\\Source\\Repos\\WebProje\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

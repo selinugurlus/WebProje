@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S1g0IQxdLak4Iz7RaP+w0i7J8oNVeyqQnCaM+BNgJMBZh16g/EUqDh7G4iu9K6Fq2q6Srqz+OiXcAqMI8wXA+A==",
+  "dgSpecHash": "2qmnmfCYjtc0CklbXKXqCHb7iC43DLZG5u0NK0CRxWjntO+ytUlqlSQyC+w1F5A5W04P8vFMVhf+2QJ9xu5tuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\selin\\source\\repos\\Web\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\selin\\Source\\Repos\\WebProje\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\selin\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
