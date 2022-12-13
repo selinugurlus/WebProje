@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DataAccessLayer",
-    "\\DataAccessLayer\\Concrete",
-    "\\DataAccessLayer\\obj",
-    "\\Web"
+    "\\Web",
+    "\\Web\\Controllers"
   ],
-  "SelectedNode": "\\DataAccessLayer\\Concrete\\Context.cs",
+  "SelectedNode": "\\Web\\Web.config",
   "PreviewInSolutionExplorer": false
 }
