@@ -1,0 +1,15 @@
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\obj\Debug\BusinessLayer1.csproj.AssemblyReference.cache
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\obj\Debug\BusinessLayer1.csproj.CoreCompileInputs.cache
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\BusinessLayer1.dll
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\BusinessLayer1.pdb
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\EntityLayer1.dll
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\EntityLayer1.pdb
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\EntityLayer1.dll.config
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\obj\Debug\BusinessLayer1.csproj.CopyComplete
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\obj\Debug\BusinessLayer1.dll
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\obj\Debug\BusinessLayer1.pdb
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\BusinessLayer1.dll.config
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\EntityFramework.dll
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\EntityFramework.xml
+C:\Users\selin\source\repos\WebProje\BusinessLayer1\bin\Debug\EntityFramework.SqlServer.xml

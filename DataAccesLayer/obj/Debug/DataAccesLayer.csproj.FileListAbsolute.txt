@@ -1,0 +1,15 @@
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.AssemblyReference.cache
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.CoreCompileInputs.cache
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\DataAccesLayer.dll.config
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\DataAccesLayer.dll
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\DataAccesLayer.pdb
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\EntityFramework.dll
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\EntityLayer1.dll
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\EntityLayer1.pdb
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\EntityLayer1.dll.config
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\EntityFramework.xml
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.CopyComplete
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.dll
+C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.pdb
