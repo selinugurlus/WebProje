@@ -52,10 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IRepository.cs" />
-    <Compile Include="Abstract\IUserDalcs.cs" />
+    <Compile Include="Abstract\IUserDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
     <Compile Include="Concrete\Repositories\UserRepository.cs" />
+    <Compile Include="EntityFramework\EfUserDal.cs" />
     <Compile Include="Migrations\202212131943347_mig1.cs" />
     <Compile Include="Migrations\202212131943347_mig1.designer.cs">
       <DependentUpon>202212131943347_mig1.cs</DependentUpon>

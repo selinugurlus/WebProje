@@ -13,3 +13,5 @@ C:\Users\selin\source\repos\WebProje\DataAccesLayer\bin\Debug\EntityFramework.Sq
 C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.CopyComplete
 C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.dll
 C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.pdb
+C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig1.resources
+C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.GenerateResource.cache

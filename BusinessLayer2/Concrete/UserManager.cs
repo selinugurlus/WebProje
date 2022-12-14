@@ -1,4 +1,6 @@
-﻿using DataAccesLayer.Concrete.Repositories;
+﻿using BusinessLayer2.Abstract;
+using DataAccesLayer.Abstract;
+using DataAccesLayer.Concrete.Repositories;
 using EntityLayer1.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,25 +10,18 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer2.Concrete
 {
-    public class UserManager
+    public class UserManager : IUserService
     {
-        GenericRepository<User> repo = new GenericRepository<User>();
+        IUserDal _userDal;
 
-        public List<User> GetAll()
+        public UserManager(IUserDal userDal)
         {
-            return repo.List();
+            _userDal = userDal;
         }
 
-        public void UserAddBL(User u)
+        public List<User> GetUserList()
         {
-            if(u.user_mail==null||u.user_name==null||u.user_surname==null||u.user_password==null)
-            {
-                //hata mesajı
-            }
-            else
-            {
-                repo.Insert(u);
-            }
+            return _userDal.List(); //genericrepository metotları geldi.
         }
     }
 }
