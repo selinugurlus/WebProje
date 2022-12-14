@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\BusinessLayer2",
+    "\\BusinessLayer2\\Concrete",
+    "\\BusinessLayer2\\ValidationRules",
     "\\Web",
     "\\Web\\Controllers"
   ],
-  "SelectedNode": "\\Web\\Web.config",
+  "SelectedNode": "\\BusinessLayer2\\ValidationRules\\UserValidator.cs",
   "PreviewInSolutionExplorer": false
 }

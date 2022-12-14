@@ -1,6 +1,8 @@
 ﻿using BusinessLayer2.Concrete;
+using BusinessLayer2.ValidationRules;
 using DataAccesLayer.EntityFramework;
 using EntityLayer1.Concrete;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +36,22 @@ namespace WebApplication1.Controllers
         public ActionResult AddUser(User u)
         {
             //um.UserAddBL(u);
-            return RedirectToAction("GetUserList");
+            UserValidator userValidator = new UserValidator();
+            ValidationResult results = userValidator.Validate(u);
+            if (results.IsValid)
+            {
+                um.UserAdd(u);
+                return RedirectToAction("GetUserList");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+
+            }
+            return View();
         }
     }
 }

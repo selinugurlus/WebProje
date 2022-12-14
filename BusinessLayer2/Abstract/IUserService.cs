@@ -10,5 +10,6 @@ namespace BusinessLayer2.Abstract
     public interface IUserService
     {
         List<User> GetUserList();
+        void UserAdd(User user);
     }
 }

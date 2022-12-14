@@ -1,4 +1,6 @@
 ﻿
+@model EntityLayer1.Concrete.User
+
 @{
     Layout = null;
 }
@@ -6,11 +8,38 @@
 
 <h1>Yeni kullanıcı ekleme sayfası</h1>
 <br />
-<form class="form-group" method="post">
+
+@using(Html.BeginForm("AddUser","User",FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Ad:")
+    @Html.TextAreaFor(x => x.user_name)
+    @Html.ValidationMessageFor(x => x.user_name)
+    <br /><br />
+    @Html.Label("Soyad:")
+    @Html.TextAreaFor(x => x.user_surname)
+    @Html.ValidationMessageFor(x => x.user_surname)
+    <br /><br />
+    @Html.Label("Mail:")
+    @Html.TextAreaFor(x => x.user_mail)
+    @Html.ValidationMessageFor(x => x.user_mail)
+    <br /><br />
+    @Html.Label("Şifre:")
+    @Html.TextAreaFor(x => x.user_password)
+    @Html.ValidationMessageFor(x => x.user_password)
+    <br /><br />
+    <button>Kayıt Ol</button>
+
+
+</div>
+
+}
+
+@*<form class="form-group" method="post">
     <input type="text" placeholder="Ad:" name="user_name" class="form-control" />
     <input type="text" placeholder="Soyad:" name="user_surname" class="form-control" />
     <input type="text" placeholder="Mail:" name="user_mail" class="form-control" />
     <input type="password" placeholder="Şifre:" name="user_password" class="form-control" />
     <button class="btn btn-primary">Ekle</button>
 
-</form>
+</form>*@

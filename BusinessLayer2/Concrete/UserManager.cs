@@ -23,5 +23,10 @@ namespace BusinessLayer2.Concrete
         {
             return _userDal.List(); //genericrepository metotları geldi.
         }
+
+        public void UserAdd(User user)
+        {
+            _userDal.Insert(user);
+        }
     }
 }
