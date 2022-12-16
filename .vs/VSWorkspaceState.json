@@ -1,14 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BusinessLayer2",
-    "\\BusinessLayer2\\Concrete",
-    "\\BusinessLayer2\\ValidationRules",
     "\\Web",
     "\\WebApplication1",
-    "\\WebApplication1\\Controllers",
+    "\\WebApplication1\\Views",
+    "\\WebApplication1\\Views\\AdminLesson",
     "\\Web\\Controllers"
   ],
-  "SelectedNode": "\\BusinessLayer2\\ValidationRules\\UserValidator.cs",
+  "SelectedNode": "\\WebApplication1\\Views\\AdminLesson\\AddLesson.cshtml",
   "PreviewInSolutionExplorer": false
 }

@@ -12,5 +12,6 @@ namespace DataAccesLayer.EntityFramework
     public class EfLessonDal : GenericRepository<Lesson>, ILessonDal
     {
 
+
     }
 }

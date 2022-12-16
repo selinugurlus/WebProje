@@ -11,5 +11,10 @@ namespace BusinessLayer2.Abstract
     {
         List<Lesson> GetLessonList();
         void LessonAdd(Lesson lesson);
+        Lesson GetByID(int id);
+        void LessonDelete(Lesson lesson);
+        void LessonUpdate(Lesson lesson);
+
+
     }
 }

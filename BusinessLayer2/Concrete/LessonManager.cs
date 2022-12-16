@@ -18,6 +18,12 @@ namespace BusinessLayer2.Concrete
             _lessonDal = lessonDal;
         }
 
+        public Lesson GetByID(int id)
+        {
+            return _lessonDal.Get(x=>x.lesson_id==id);
+        }
+
+        
 
         public List<Lesson> GetLessonList()
         {
@@ -31,6 +37,16 @@ namespace BusinessLayer2.Concrete
         public void LessonAdd(Lesson lesson)
         {
             _lessonDal.Insert(lesson);
+        }
+
+        public void LessonDelete(Lesson lesson)
+        {
+            _lessonDal.Delete(lesson);
+        }
+
+        public void LessonUpdate(Lesson lesson)
+        {
+            _lessonDal.Update(lesson);
         }
     }
 }

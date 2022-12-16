@@ -1,0 +1,27 @@
+﻿@model EntityLayer1.Concrete.Lesson
+
+@{
+    ViewBag.Title = "UpdateLesson";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Ders Güncelleme Sayfası</h2>
+@using (Html.BeginForm("UpdateLesson", "AdminLesson", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Ders ID")
+        @Html.TextBoxFor(x => x.lesson_id,new { @class = "form-control" })
+        <br />
+        @Html.Label("Ders Adı")
+        @Html.TextBoxFor(x => x.lesson_name, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-success">Güncelle</button>
+
+
+    </div>
+
+}
+
+
+

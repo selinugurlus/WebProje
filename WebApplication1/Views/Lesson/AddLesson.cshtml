@@ -14,11 +14,11 @@
 {
     <div class="form-group">
         @Html.Label("Ders Adı:")
-        @Html.TextAreaFor(x => x.lesson_name)
+        @Html.TextBoxFor(x => x.lesson_name)
         @Html.ValidationMessageFor(x => x.lesson_name)
         <br /><br />
-        @Html.Label("Ders durumu:")
-        @Html.TextAreaFor(x => x.lesson_status)
+        @Html.Label("Ders durumu (true:onaylı/false:onaylı değil):")
+        @Html.TextBoxFor(x => x.lesson_status)
         @Html.ValidationMessageFor(x => x.lesson_status)
         <br /><br />
         <button>Yeni Ders Ekle</button>
