@@ -15,3 +15,4 @@ C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.dll
 C:\Users\selin\source\repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.pdb
 C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig1.resources
 C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.GenerateResource.cache
+C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig11.resources

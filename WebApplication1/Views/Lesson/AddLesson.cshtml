@@ -1,0 +1,29 @@
+﻿
+@model EntityLayer1.Concrete.Lesson
+
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<h1>Yeni ders ekleme sayfası</h1>
+<br />
+
+@using (Html.BeginForm("AddLesson", "Lesson", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Ders Adı:")
+        @Html.TextAreaFor(x => x.lesson_name)
+        @Html.ValidationMessageFor(x => x.lesson_name)
+        <br /><br />
+        @Html.Label("Ders durumu:")
+        @Html.TextAreaFor(x => x.lesson_status)
+        @Html.ValidationMessageFor(x => x.lesson_status)
+        <br /><br />
+        <button>Yeni Ders Ekle</button>
+
+
+    </div>
+}
+

@@ -5,6 +5,8 @@
     "\\BusinessLayer2\\Concrete",
     "\\BusinessLayer2\\ValidationRules",
     "\\Web",
+    "\\WebApplication1",
+    "\\WebApplication1\\Controllers",
     "\\Web\\Controllers"
   ],
   "SelectedNode": "\\BusinessLayer2\\ValidationRules\\UserValidator.cs",

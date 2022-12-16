@@ -11,5 +11,10 @@ namespace DataAccesLayer.Concrete
     public class Context:DbContext
     {
        public DbSet <User> Userss { get; set; }
+       public DbSet <Lesson> Lessons { get; set; }
+       public DbSet<Content> Contents { get; set; }
+       public DbSet <Subject> Subjects { get; set; }
+
+
     }
 }

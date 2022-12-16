@@ -1,0 +1,30 @@
+﻿
+@using EntityLayer1.Concrete
+@model List<Lesson>
+
+
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Ders Adı</th>
+        <th>Ders Durumu</th>
+        
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.lesson_name</td>
+            <td>@item.lesson_status</td>
+           
+        </tr>
+    }
+</table>
+<br />
+<a href="/Lesson/AddLesson" class="btn btn-info">Yeni Ders Ekle</a>
+
+
