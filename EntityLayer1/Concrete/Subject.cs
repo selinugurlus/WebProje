@@ -13,6 +13,8 @@ namespace EntityLayer1.Concrete
         [StringLength(100)]
         public string subject_name { get; set; }
 
+        public bool subject_status { get; set; }
+
         public int lesson_id { get; set; }  //lesson ve subject tabloları ilişkisi
         public virtual Lesson Lesson{ get; set; }
 

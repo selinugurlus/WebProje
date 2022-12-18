@@ -14,10 +14,12 @@ namespace WebApplication1.Controllers
     public class UserController : Controller
     {
         UserManager um = new UserManager(new EfUserDal());
+        UserValidator userValidator = new UserValidator();
 
         public ActionResult Index()
         {
-            return View();
+            var uservalues = um.GetUserList();
+            return View(uservalues);
         }
 
         public ActionResult GetUserList()
@@ -36,12 +38,12 @@ namespace WebApplication1.Controllers
         public ActionResult AddUser(User u)
         {
             //um.UserAddBL(u);
-            UserValidator userValidator = new UserValidator();
+           
             ValidationResult results = userValidator.Validate(u);
             if (results.IsValid)
             {
                 um.UserAdd(u);
-                return RedirectToAction("GetUserList");
+                return RedirectToAction("Index");
             }
             else
             {
@@ -52,6 +54,36 @@ namespace WebApplication1.Controllers
 
             }
             return View();
+
+        }
+
+        [HttpGet]
+        public ActionResult UpdateUser(int id)
+        {
+            var uservalue = um.GetByID(id);
+            return View(uservalue);
+
+        }
+
+        [HttpPost]
+        public ActionResult UpdateUser(User u)
+        {
+            ValidationResult results = userValidator.Validate(u);
+            if (results.IsValid)
+            {
+                um.UserUpdate(u);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+
+            }
+            return View();
+            
         }
     }
 }

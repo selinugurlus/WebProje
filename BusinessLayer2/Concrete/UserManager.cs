@@ -19,6 +19,11 @@ namespace BusinessLayer2.Concrete
             _userDal = userDal;
         }
 
+        public User GetByID(int id)
+        {
+            return _userDal.Get(x => x.user_id == id);
+        }
+
         public List<User> GetUserList()
         {
             return _userDal.List(); //genericrepository metotları geldi.
@@ -27,6 +32,16 @@ namespace BusinessLayer2.Concrete
         public void UserAdd(User user)
         {
             _userDal.Insert(user);
+        }
+
+        public void UserDelete(User user)
+        {
+            _userDal.Delete(user);
+        }
+
+        public void UserUpdate(User user)
+        {
+            _userDal.Update(user);
         }
     }
 }

@@ -14,7 +14,9 @@ namespace EntityLayer1.Concrete
         [StringLength(2000)]
         public string content_value { get; set; }
 
-       public int subject_id { get; set; }
+        public bool content_status { get; set; }
+
+        public int subject_id { get; set; }
        public virtual Subject Subject { get; set; }
 
         public int ? user_id { get; set; }

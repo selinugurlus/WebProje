@@ -1,0 +1,36 @@
+﻿@model EntityLayer1.Concrete.User
+
+@{
+    ViewBag.Title = "UpdateUser";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+
+<h2>Kullanıcı Düzenleme Sayfası</h2>
+@using (Html.BeginForm("UpdateUser", "User", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Kullanıcı ID")
+    @Html.TextBoxFor(x => x.user_id, new { @class = "form-control" })
+    <br /><br />
+    @Html.Label("Ad")
+    @Html.TextBoxFor(x => x.user_name, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.user_name)
+    <br /><br />
+    @Html.Label("Soyad")
+    @Html.TextBoxFor(x => x.user_surname, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.user_surname)
+    <br /><br />
+    @Html.Label("Mail")
+    @Html.TextBoxFor(x => x.user_mail, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.user_mail)
+    <br /><br />
+    @Html.Label("Şifre")
+    @Html.TextBoxFor(x => x.user_password, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.user_password)
+    <br /><br />
+    <button class="btn btn-success">Kaydet</button>
+</div>
+
+        }
+

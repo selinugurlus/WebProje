@@ -2,33 +2,34 @@
 @model EntityLayer1.Concrete.User
 
 @{
-    Layout = null;
+    ViewBag.Title = "AddUser";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
-<h1>Yeni kullanıcı ekleme sayfası</h1>
+
+<h1>Yeni Kullanıcı Ekleme </h1>
 <br />
 
 @using(Html.BeginForm("AddUser","User",FormMethod.Post))
 {
 <div class="form-group">
     @Html.Label("Ad:")
-    @Html.TextAreaFor(x => x.user_name)
+    @Html.TextBoxFor(x => x.user_name,new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.user_name)
     <br /><br />
     @Html.Label("Soyad:")
-    @Html.TextAreaFor(x => x.user_surname)
+    @Html.TextBoxFor(x => x.user_surname, new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.user_surname)
     <br /><br />
     @Html.Label("Mail:")
-    @Html.TextAreaFor(x => x.user_mail)
+    @Html.TextBoxFor(x => x.user_mail, new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.user_mail)
     <br /><br />
     @Html.Label("Şifre:")
-    @Html.TextAreaFor(x => x.user_password)
+    @Html.TextBoxFor(x => x.user_password, new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.user_password)
     <br /><br />
-    <button>Kayıt Ol</button>
+    <button class="btn btn-info">Kayıt Ol</button>
 
 
 </div>

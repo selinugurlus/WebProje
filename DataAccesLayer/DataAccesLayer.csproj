@@ -59,7 +59,9 @@
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
     <Compile Include="Concrete\Repositories\UserRepository.cs" />
+    <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfLessonDal.cs" />
+    <Compile Include="EntityFramework\EfSubjectDal.cs" />
     <Compile Include="EntityFramework\EfUserDal.cs" />
     <Compile Include="Migrations\202212131943347_mig1.cs" />
     <Compile Include="Migrations\202212131943347_mig1.designer.cs">
@@ -68,6 +70,22 @@
     <Compile Include="Migrations\202212160843071_mig11.cs" />
     <Compile Include="Migrations\202212160843071_mig11.designer.cs">
       <DependentUpon>202212160843071_mig11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212181137508_mig_user_edit.cs" />
+    <Compile Include="Migrations\202212181137508_mig_user_edit.designer.cs">
+      <DependentUpon>202212181137508_mig_user_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212181417499_mig_user_addstatus.cs" />
+    <Compile Include="Migrations\202212181417499_mig_user_addstatus.designer.cs">
+      <DependentUpon>202212181417499_mig_user_addstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212181529367_mig_contentstatusadd.cs" />
+    <Compile Include="Migrations\202212181529367_mig_contentstatusadd.designer.cs">
+      <DependentUpon>202212181529367_mig_contentstatusadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212181536042_mig_subjectstatusadd.cs" />
+    <Compile Include="Migrations\202212181536042_mig_subjectstatusadd.designer.cs">
+      <DependentUpon>202212181536042_mig_subjectstatusadd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,6 +106,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202212160843071_mig11.resx">
       <DependentUpon>202212160843071_mig11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212181137508_mig_user_edit.resx">
+      <DependentUpon>202212181137508_mig_user_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212181417499_mig_user_addstatus.resx">
+      <DependentUpon>202212181417499_mig_user_addstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212181529367_mig_contentstatusadd.resx">
+      <DependentUpon>202212181529367_mig_contentstatusadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212181536042_mig_subjectstatusadd.resx">
+      <DependentUpon>202212181536042_mig_subjectstatusadd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
