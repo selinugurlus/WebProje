@@ -14,6 +14,7 @@ namespace DataAccesLayer.Concrete
        public DbSet <Lesson> Lessons { get; set; }
        public DbSet<Content> Contents { get; set; }
        public DbSet <Subject> Subjects { get; set; }
+       public DbSet <Admin> Admins { get; set; }
 
 
     }

@@ -8,8 +8,10 @@
     "\\WebApplication1\\Controllers",
     "\\WebApplication1\\Views",
     "\\WebApplication1\\Views\\AdminLesson",
+    "\\WebApplication1\\Views\\ErrorPage",
+    "\\WebApplication1\\Views\\Subject",
     "\\Web\\Controllers"
   ],
-  "SelectedNode": "\\WebApplication1\\Controllers\\AdminLessonController.cs",
+  "SelectedNode": "\\WebApplication1\\Views\\ErrorPage\\Page404.cshtml",
   "PreviewInSolutionExplorer": false
 }

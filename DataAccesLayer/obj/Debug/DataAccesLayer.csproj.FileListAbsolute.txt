@@ -20,3 +20,4 @@ C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.Mig
 C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_user_addstatus.resources
 C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_contentstatusadd.resources
 C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_subjectstatusadd.resources
+C:\Users\selin\Source\Repos\WebProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_admin_table.resources
