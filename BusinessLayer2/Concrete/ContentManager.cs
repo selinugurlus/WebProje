@@ -43,6 +43,11 @@ namespace BusinessLayer2.Concrete
             throw new NotImplementedException();
         }
 
+        public List<Content> GetContentListByUser()
+        {
+            return _contentDal.List(x => x.user_id == 1);
+        }
+
         public List<Content> GetListBySubjectID(int id)
         {
             return _contentDal.List(x => x.content_id == id);

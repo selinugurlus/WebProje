@@ -10,6 +10,7 @@ namespace BusinessLayer2.Abstract
     public interface ISubjectService
     {
         List<Subject> GetSubjectList();
+        List<Subject> GetSubjectListByUser();
         void SubjectAdd(Subject subject);
         Subject GetByID(int id);
         void SubjectDelete(Subject subject);

@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BusinessLayer2",
-    "\\BusinessLayer2\\Concrete",
     "\\Web",
     "\\WebApplication1",
     "\\WebApplication1\\Controllers",
     "\\WebApplication1\\Views",
     "\\WebApplication1\\Views\\AdminLesson",
     "\\WebApplication1\\Views\\ErrorPage",
+    "\\WebApplication1\\Views\\Login",
     "\\WebApplication1\\Views\\Subject",
     "\\Web\\Controllers"
   ],
-  "SelectedNode": "\\WebApplication1\\Views\\ErrorPage\\Page404.cshtml",
+  "SelectedNode": "\\WebApplication1\\Views\\Login\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

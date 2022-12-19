@@ -38,5 +38,32 @@ namespace WebApplication1.Controllers
             }
             
         }
+
+        [HttpGet]
+        public ActionResult UserLogin()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult UserLogin(User a)
+        {
+            Context c = new Context();
+            var useruserinfo = c.Userss.FirstOrDefault(x => x.user_mail== a.user_mail &&
+                x.user_password == a.user_password); //firstordefault geriye sadece bir değer döndürme işlemini yapıyor
+            if (useruserinfo != null)
+            {
+                FormsAuthentication.SetAuthCookie(useruserinfo.user_mail, false);
+                Session["user_mail"] = useruserinfo.user_mail;
+                return RedirectToAction("MyContent", "UserPanelContent");
+            }
+            else
+            {
+                Response.Write("<script language='javascript'>alert(\"Hatalı Kullanıcı Adı veya Şifre Girdiniz\")</script>");
+                return RedirectToAction("UserLogin");
+
+            }
+           
+        }
     }
 }

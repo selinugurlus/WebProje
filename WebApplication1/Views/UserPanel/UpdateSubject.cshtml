@@ -1,0 +1,26 @@
+﻿@model EntityLayer1.Concrete.Subject
+@{
+    ViewBag.Title = "UpdateSubject";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Konu Başlığı Güncelleme Sayfası</h2>
+@using (Html.BeginForm("UpdateSubject", "UserPanel", FormMethod.Post))
+{
+    <div class="form-group">
+       
+        @Html.HiddenFor(x => x.subject_id)
+        @Html.HiddenFor(x=>x.user_id)
+        
+        @Html.Label("Konu Adı")
+        @Html.TextBoxFor(x => x.subject_name, new { @class = "form-control" })
+        <br /><br />
+        @Html.Label("Ders")
+        @Html.DropDownListFor(x => x.lesson_id, (List<SelectListItem>)ViewBag.vll, new { @class = "form-control" })
+       
+        <br /><br />
+        <button class="btn btn-success">Güncelle</button>
+    </div>
+
+}
+
