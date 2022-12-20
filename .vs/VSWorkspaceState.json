@@ -3,14 +3,14 @@
     "",
     "\\Web",
     "\\WebApplication1",
-    "\\WebApplication1\\Controllers",
     "\\WebApplication1\\Views",
-    "\\WebApplication1\\Views\\AdminLesson",
     "\\WebApplication1\\Views\\ErrorPage",
     "\\WebApplication1\\Views\\Login",
     "\\WebApplication1\\Views\\Subject",
+    "\\WebApplication1\\Views\\UserPanel",
+    "\\WebApplication1\\Views\\UserPanelContent",
     "\\Web\\Controllers"
   ],
-  "SelectedNode": "\\WebApplication1\\Views\\Login\\Index.cshtml",
+  "SelectedNode": "\\WebApplication1\\Views\\UserPanelContent\\MyContent.cshtml",
   "PreviewInSolutionExplorer": false
 }

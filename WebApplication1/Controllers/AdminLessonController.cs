@@ -15,7 +15,7 @@ namespace WebApplication1.Controllers
     {
         LessonManager lm = new LessonManager(new EfLessonDal());
        
-        [Authorize(Roles="A")] //bunu sadece b rolüne sahip olan kişiler görebilir.
+       
         public ActionResult Index()
         {
             var lessonvalues = lm.GetLessonList();

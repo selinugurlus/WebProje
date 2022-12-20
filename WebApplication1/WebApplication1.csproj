@@ -140,6 +140,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminLessonController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LessonController.cs" />
@@ -2535,6 +2536,10 @@
     <Content Include="Views\UserPanel\UpdateSubject.cshtml" />
     <Content Include="Views\UserPanelContent\MyContent.cshtml" />
     <Content Include="Views\Login\UserLogin.cshtml" />
+    <Content Include="Views\Default\Subjects.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\UserPanel\AllSubject.cshtml" />
+    <Content Include="Views\UserPanelContent\AddContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -27,9 +27,9 @@ namespace BusinessLayer2.Concrete
             return _subjectDal.List();
         }
 
-        public List<Subject> GetSubjectListByUser()
+        public List<Subject> GetSubjectListByUser(int id)
         {
-            return _subjectDal.List(x => x.user_id ==1);
+            return _subjectDal.List(x => x.user_id ==id);
         }
 
         public void SubjectAdd(Subject subject)

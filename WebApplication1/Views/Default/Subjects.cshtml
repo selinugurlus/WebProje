@@ -1,4 +1,6 @@
-﻿
+﻿@using EntityLayer1.Concrete
+@model List<Subject>
+
 @{
     Layout = null;
 }
@@ -49,77 +51,35 @@ to get the desired effect
                         <img src="~/AdminLTE-3.0.4/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Kullanıcı Paneli</a>
+                        <a href="#" class="d-block">Konu Başlıkları</a>
                     </div>
                 </div>
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-     with font-awesome or any other icon font library -->
-                        <!--eğer a rolünde ise dersler kısmı görüntülensin demek.-->
-                        <li class="nav-item has-treeview">
-                            <a href="/UserPanel/UserProfile/" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Profilim
-                                </p>
-                            </a>
-                        </li>
 
+                        @foreach (var item in Model)
+                        {
                         <li class="nav-item">
-                            <a href="/UserPanel/MySubject/" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                            <a href="/Default/Subjects/@item.subject_id" class="nav-link">
                                 <p>
-                                    Açtığım Konu Başlıkları
+                                    @item.subject_name
                                 </p>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/UserPanel/AllSubject/" class="nav-link">
-                                <i class="nav-icon fas fa-list-alt"></i>
-                                <p>
-                                    Tüm Konu Başlıkları
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/UserPanelContent/MyContent/" class="nav-link">
-                                <i class="nav-icon fas fa-calendar-alt"></i>
-                                <p>
-                                    Eklediğim Notlar
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="/Default/Subjects" class="nav-link">
-                                <i class="nav-icon fas fa-book"></i>
-                                <p>
-                                    Siteye Git
-                                </p>
-                            </a>
-
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="/Login/LogOut/" class="nav-link">
-                                <i class="nav-icon fas fa-apple-alt"></i>
-                                <p>
-                                    Çıkış yap
-                                </p>
-                            </a>
-
-                        </li>
+                        </li>      
+                        }
                     </ul>
                 </nav>
-                <!-- /.sidebar-menu -->
+                <!-- /.sidebar-menu -->s
             </div>
             <!-- /.sidebar -->
         </aside>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Main content -->
+            @Html.Action("Index","Default")
             <div class="content">
-                @RenderBody()
+                
                 <!-- /.container-fluid -->
             </div>
             <!-- /.content -->

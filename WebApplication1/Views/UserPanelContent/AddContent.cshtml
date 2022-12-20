@@ -1,0 +1,30 @@
+﻿
+@model EntityLayer1.Concrete.Content
+
+
+@{
+    ViewBag.Title = "AddContent";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h1>Yeni Not Ekleme </h1>
+<br />
+
+@using (Html.BeginForm("AddContent", "UserPanelContent", FormMethod.Post))
+{
+    <div class="form-group">
+        <input type="hidden" name="subject_id" value="@ViewBag.d" />
+        <br />
+        @Html.Label("Not:")
+        @Html.TextAreaFor(x => x.content_value,20,30, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.content_value)
+        <br /><br />
+    
+
+        <button class="btn btn-success">Kaydet</button>
+
+
+    </div>
+
+}
+

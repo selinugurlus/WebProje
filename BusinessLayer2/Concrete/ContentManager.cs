@@ -20,7 +20,7 @@ namespace BusinessLayer2.Concrete
 
         public void ContentAdd(Content content)
         {
-            throw new NotImplementedException();
+            _contentDal.Insert(content);
         }
 
         public void ContentDelete(Content content)
@@ -40,12 +40,12 @@ namespace BusinessLayer2.Concrete
 
         public List<Content> GetContentList()
         {
-            throw new NotImplementedException();
+            return _contentDal.List();
         }
 
-        public List<Content> GetContentListByUser()
+        public List<Content> GetContentListByUser(int id)
         {
-            return _contentDal.List(x => x.user_id == 1);
+            return _contentDal.List(x => x.user_id == id);
         }
 
         public List<Content> GetListBySubjectID(int id)

@@ -1,8 +1,34 @@
-﻿
+﻿@model EntityLayer1.Concrete.User
+
 @{
     ViewBag.Title = "UserProfile";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
-<h2>UserProfile</h2>
-Merhaba
+<h2>Profili Düzenle</h2>
+
+
+
+@using (Html.BeginForm("UserProfile", "UserPanel", FormMethod.Post))
+{
+<div class="form-group">
+
+    @Html.HiddenFor(x => x.user_id, new { @class = "form-control" })
+    <br />
+    @Html.Label("Kullanıcı Adı")
+    @Html.TextBoxFor(x => x.user_name, new { @class = "form-control" })
+    <br />
+    @Html.Label("Kullanıcı Soyadı")
+    @Html.TextBoxFor(x => x.user_surname, new { @class = "form-control" })
+    <br />
+    @Html.Label("Kullanıcı Mail")
+    @Html.TextBoxFor(x => x.user_mail, new { @class = "form-control" })
+    <br />
+    @Html.Label("Şifre")
+    @Html.TextBoxFor(x => x.user_password, new { @class = "form-control" })
+    <br />
+
+
+</div>
+}
+

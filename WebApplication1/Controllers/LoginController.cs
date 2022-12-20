@@ -1,4 +1,6 @@
-﻿using DataAccesLayer.Concrete;
+﻿using BusinessLayer2.Concrete;
+using DataAccesLayer.Concrete;
+using DataAccesLayer.EntityFramework;
 using EntityLayer1.Concrete;
 using System;
 using System.Collections.Generic;
@@ -9,8 +11,10 @@ using System.Web.Security;
 
 namespace WebApplication1.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
+        UserLoginManager ulm =new UserLoginManager(new EfUserDal());
         // GET: Login
         [HttpGet]
         public ActionResult Index()
@@ -48,10 +52,11 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public ActionResult UserLogin(User a)
         {
-            Context c = new Context();
-            var useruserinfo = c.Userss.FirstOrDefault(x => x.user_mail== a.user_mail &&
-                x.user_password == a.user_password); //firstordefault geriye sadece bir değer döndürme işlemini yapıyor
-            if (useruserinfo != null)
+            //    Context c = new Context();
+            //    var useruserinfo = c.Userss.FirstOrDefault(x => x.user_mail== a.user_mail &&
+            //        x.user_password == a.user_password); //firstordefault geriye sadece bir değer döndürme işlemini yapıyor
+            var useruserinfo = ulm.GetUser(a.user_mail, a.user_password);
+        if (useruserinfo != null)
             {
                 FormsAuthentication.SetAuthCookie(useruserinfo.user_mail, false);
                 Session["user_mail"] = useruserinfo.user_mail;
@@ -64,6 +69,13 @@ namespace WebApplication1.Controllers
 
             }
            
+        }
+
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Subjects", "Default");
         }
     }
 }
