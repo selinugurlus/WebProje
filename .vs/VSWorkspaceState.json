@@ -1,16 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Web",
     "\\WebApplication1",
-    "\\WebApplication1\\Views",
-    "\\WebApplication1\\Views\\ErrorPage",
-    "\\WebApplication1\\Views\\Login",
-    "\\WebApplication1\\Views\\Subject",
-    "\\WebApplication1\\Views\\UserPanel",
-    "\\WebApplication1\\Views\\UserPanelContent",
-    "\\Web\\Controllers"
+    "\\WebApplication1\\Controllers"
   ],
-  "SelectedNode": "\\WebApplication1\\Views\\UserPanelContent\\MyContent.cshtml",
+  "SelectedNode": "\\WebApplication1\\Controllers\\DefaultController.cs",
   "PreviewInSolutionExplorer": false
 }

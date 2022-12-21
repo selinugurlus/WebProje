@@ -50,7 +50,7 @@ namespace BusinessLayer2.Concrete
 
         public List<Content> GetListBySubjectID(int id)
         {
-            return _contentDal.List(x => x.content_id == id);
+            return _contentDal.List(x => x.subject_id == id);
         }
     }
 }
