@@ -10,3 +10,15 @@ C:\Users\selin\source\repos\WebProje\EntityLayer1\obj\Debug\EntityLayer1.csproj.
 C:\Users\selin\source\repos\WebProje\EntityLayer1\obj\Debug\EntityLayer1.csproj.CopyComplete
 C:\Users\selin\source\repos\WebProje\EntityLayer1\obj\Debug\EntityLayer1.dll
 C:\Users\selin\source\repos\WebProje\EntityLayer1\obj\Debug\EntityLayer1.pdb
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\bin\Debug\EntityLayer1.dll.config
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\bin\Debug\EntityLayer1.dll
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\bin\Debug\EntityLayer1.pdb
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\bin\Debug\EntityFramework.dll
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\bin\Debug\EntityFramework.xml
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\obj\Debug\EntityLayer1.csproj.AssemblyReference.cache
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\obj\Debug\EntityLayer1.csproj.CoreCompileInputs.cache
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\obj\Debug\EntityLayer1.csproj.CopyComplete
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\obj\Debug\EntityLayer1.dll
+C:\Users\selin\Source\Repos\WebProje2\EntityLayer1\obj\Debug\EntityLayer1.pdb

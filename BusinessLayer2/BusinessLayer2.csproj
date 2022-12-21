@@ -54,11 +54,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAdminService.cs" />
     <Compile Include="Abstract\IContentService.cs" />
     <Compile Include="Abstract\ILessonService.cs" />
     <Compile Include="Abstract\ISubjectService.cs" />
     <Compile Include="Abstract\IUserLoginService.cs" />
     <Compile Include="Abstract\IUserService.cs" />
+    <Compile Include="Concrete\AdminManager.cs" />
     <Compile Include="Concrete\ContentManager.cs" />
     <Compile Include="Concrete\LessonManager.cs" />
     <Compile Include="Concrete\SubjectManager.cs" />

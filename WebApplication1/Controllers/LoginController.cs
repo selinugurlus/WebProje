@@ -1,7 +1,9 @@
 ﻿using BusinessLayer2.Concrete;
+using BusinessLayer2.ValidationRules;
 using DataAccesLayer.Concrete;
 using DataAccesLayer.EntityFramework;
 using EntityLayer1.Concrete;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,6 +78,38 @@ namespace WebApplication1.Controllers
             FormsAuthentication.SignOut();
             Session.Abandon();
             return RedirectToAction("Subjects", "Default");
+        }
+
+        [HttpGet]
+        public ActionResult UserRegister()
+        {
+
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult UserRegister(User u)
+        {
+            UserManager um = new UserManager(new EfUserDal());
+            UserValidator userValidator = new UserValidator();
+            ValidationResult results = userValidator.Validate(u);
+            if (results.IsValid)
+            {
+                um.UserAdd(u);
+                //u.user_status = true;
+                return RedirectToAction("UserLogin");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+
+            }
+            return View();
+
         }
     }
 }

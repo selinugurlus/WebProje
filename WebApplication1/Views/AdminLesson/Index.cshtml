@@ -14,7 +14,7 @@
         <th>Ders Adı</th>
         <th>Sil</th>
         <th>Güncelle</th>
-        <th>Konular</th>
+      
 
     </tr>
     @foreach (var item in Model)
@@ -24,8 +24,7 @@
     <td>@item.lesson_name</td>
     <td><a href="/AdminLesson/DeleteLesson/@item.lesson_id" class="btn btn-danger">Sil</a></td>
     <td><a href="/AdminLesson/UpdateLesson/@item.lesson_id" class="btn btn-warning">Güncelle</a></td>
-    <td><a href="#" class="btn btn-primary">Konular</a></td>
-
+    
 </tr>
     }
 </table>

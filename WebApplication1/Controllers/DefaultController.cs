@@ -23,7 +23,7 @@ namespace WebApplication1.Controllers
             return View(subjectlist);
         }
         
-        public PartialViewResult Index(int id=0)
+        public PartialViewResult Index(int id)
         {
             var contentlist = cm.GetListBySubjectID(id);
             return PartialView(contentlist);

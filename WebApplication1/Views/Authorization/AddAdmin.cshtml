@@ -1,0 +1,34 @@
+﻿
+@model EntityLayer1.Concrete.Admin
+
+@{
+    ViewBag.Title = "AddAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yeni Admin Ekleme Sayfası</h1>
+<br />
+
+@using (Html.BeginForm("AddAdmin", "Authorization", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Admin Kullanıcı Adı:")
+    @Html.TextBoxFor(x => x.admin_username, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("Şifreyi Girin:")
+    @Html.TextBoxFor(x => x.admin_password, new { @class = "form-control" })
+
+    
+    <br />
+    @Html.Label("Rolü Seçin:")
+    @Html.TextBoxFor(x => x.admin_role, new { @class = "form-control" })
+
+    <br />
+    <button class="btn btn-info">Yeni Admin Ekle</button>
+
+
+</div>
+}
+
+

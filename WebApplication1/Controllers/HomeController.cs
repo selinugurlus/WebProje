@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
-{
+{[AllowAnonymous]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -24,6 +24,10 @@ namespace WebApplication1.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+        public ActionResult HomePage()
+        {
             return View();
         }
     }
