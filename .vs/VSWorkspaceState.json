@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\WebApplication1",
-    "\\WebApplication1\\Controllers"
+    "\\WebApplication1\\Controllers",
+    "\\WebApplication1\\Views",
+    "\\WebApplication1\\Views\\Home"
   ],
-  "SelectedNode": "\\WebApplication1\\Controllers\\DefaultController.cs",
+  "SelectedNode": "\\WebApplication1\\Views\\Home\\HomePage.cshtml",
   "PreviewInSolutionExplorer": false
 }
