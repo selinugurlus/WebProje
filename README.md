@@ -4,10 +4,9 @@ Bu proje öğrencilerin ders ve konu başlıklarına göre kendi notlarını bir
 Admin paneli ile üyelerin yönetimi ve içerik silme ekleme yetkisi kontrol edilir.
 
 <img width="959" alt="mainpage1" src="https://github.com/selinugurlus/WebProje/assets/78180235/4f7d9850-11d5-4e6b-91db-3252be2472db">
+<img width="956" alt="mainpage2" src="https://github.com/selinugurlus/WebProje/assets/78180235/d7863695-52c6-41a9-b4c1-bacfc2f948ed">
+<img width="960" alt="mainpage3" src="https://github.com/selinugurlus/WebProje/assets/78180235/2af16d1b-b2cc-443e-a8f5-f1b5a3fdcf20">
 
-<img width="956" alt="mainpage2" src="https://github.com/selinugurlus/WebProje/assets/78180235/6aeaed55-7808-4ad2-acea-2f8d5da440b9">
-
-<img width="960" alt="mainpage3" src="https://github.com/selinugurlus/WebProje/assets/78180235/e4a77d38-4ac4-4d5f-b579-10b13c9a9ddf">
 
 <img width="953" alt="Ekran görüntüsü 2023-05-21 140645" src="https://github.com/selinugurlus/WebProje/assets/78180235/f8648d76-feb8-4ed1-ac47-054d74bb2561">
 <img width="960" alt="Ekran görüntüsü 2023-05-21 140721" src="https://github.com/selinugurlus/WebProje/assets/78180235/c12a2baa-f133-43b4-b94b-9aea3eee7837">
